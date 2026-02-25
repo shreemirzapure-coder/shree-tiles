@@ -18,7 +18,7 @@ export default function Home() {
             Premium Tiles in Easy Installments
           </p>
           <p style={{ color: "#aaa", marginBottom: "30px" }}>
-            Balaghat | Awalazari
+           NAGPUR | BALAGHAT
           </p>
 
           <a
