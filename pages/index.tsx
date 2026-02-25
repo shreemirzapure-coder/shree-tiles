@@ -1,4 +1,5 @@
-import Head from "next/head";
+import head from"next/head";
+import { usestate } from "from react";
 export default function Home() {
   const [amount, setAmount] = useState(0);
   const [months, setMonths] = useState(6);
