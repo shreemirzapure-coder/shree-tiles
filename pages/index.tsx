@@ -35,36 +35,19 @@ export default function Home() {
             Nagpur | Balaghat
           </p>
 
-          <div style={{ marginTop: "20px" }}>
-  <a
-    href="https://wa.me/919623640081"
-    style={{
-      background: "#25D366",
-      color: "white",
-      padding: "12px 25px",
-      textDecoration: "none",
-      borderRadius: "6px",
-      fontWeight: "bold",
-      marginRight: "15px"
-    }}
-  >
-    WhatsApp
-  </a>
-
-  <a
-    href="tel:9623640081"
-    style={{
-      background: "white",
-      color: "black",
-      padding: "12px 25px",
-      textDecoration: "none",
-      borderRadius: "6px",
-      fontWeight: "bold"
-    }}
-  >
-    Call Now
-  </a>
-</div>
+          <a
+            href="https://wa.me/919623640081"
+            style={{
+              background: "#25D366",
+              color: "white",
+              padding: "12px 25px",
+              textDecoration: "none",
+              borderRadius: "6px",
+              fontWeight: "bold"
+            }}
+          >
+            Contact on WhatsApp
+          </a>
         </section>
 
         {/* TILE TYPES */}
