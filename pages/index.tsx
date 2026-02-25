@@ -1,6 +1,42 @@
 import Head from "next/head";
 
 export default function Home() {
+  const [amount, setAmount] = useState(0);
+  const [months, setMonths] = useState(6);
+
+  const emi = months > 0 ? (amount / months).toFixed(2) : 0;
+  {/* EMI CALCULATOR */}
+<section style={{ padding: "60px 20px", background: "#000" }}>
+  <div style={{ maxWidth: "600px", margin: "auto" }}>
+    <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
+      EMI Calculator
+    </h2>
+
+    <div style={{ marginBottom: "15px" }}>
+      <label>Total Amount (₹)</label>
+      <input
+        type="number"
+        value={amount}
+        onChange={(e) => setAmount(Number(e.target.value))}
+        style={{ width: "100%", padding: "10px", marginTop: "5px" }}
+      />
+    </div>
+
+    <div style={{ marginBottom: "15px" }}>
+      <label>Number of Months</label>
+      <input
+        type="number"
+        value={months}
+        onChange={(e) => setMonths(Number(e.target.value))}
+        style={{ width: "100%", padding: "10px", marginTop: "5px" }}
+      />
+    </div>
+
+    <div style={{ marginTop: "20px", fontSize: "20px" }}>
+      Monthly EMI: ₹ {emi}
+    </div>
+  </div>
+</section>
   return (
     <>
       <Head>
