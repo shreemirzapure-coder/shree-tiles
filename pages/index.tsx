@@ -1,9 +1,7 @@
 import Head from "next/head";
-
 export default function Home() {
   const [amount, setAmount] = useState(0);
   const [months, setMonths] = useState(6);
-
   const emi = months > 0 ? (amount / months).toFixed(2) : 0;
   {/* EMI CALCULATOR */}
 <section style={{ padding: "60px 20px", background: "#000" }}>
